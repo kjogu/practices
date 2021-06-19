@@ -1,0 +1,43 @@
+//1
+let firstname = `Karla`;
+let lastname = 'Garcia';
+
+console.log(`Hi my name is ${firstname} ${lastname}`);
+
+//2
+const name = {
+    FristName: "Ivan Morales",
+    Names: function() {
+    return `${this.FristName}`;
+    },
+  };
+  console.log (name.Names());
+ 
+//3
+//a
+function anonymous(){
+   //alert 
+    console.log ('Time is Up!');
+  }
+  setTimeout(anonymous, 5);
+  
+//b
+setInterval(function askAreWeThereYet() {
+    console.log('Are we there yet?');
+}, 1000);
+
+//4
+
+function myCallback(message) {
+  console.log(message);
+}
+
+function welcome(name, myCallback) {
+  const message = `Welcome ${name}`;
+  myCallback(message);
+}
+
+welcome('Antonio', myCallback);
+
+
+//a
